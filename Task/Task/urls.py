@@ -23,5 +23,5 @@ router=DefaultRouter()
 router.register('Student',views.StudentViewset)
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Details/',include(router.urls)),
+    path('',include(router.urls)),
 ]
